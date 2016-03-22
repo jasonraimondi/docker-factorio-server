@@ -31,7 +31,7 @@ refresh_save(){
 
   # Else we copy the latest save to our own save file
   echo "using refreshed save"
-  if ! as_user "cp ${lastsave} ${savedir}/${SAVE_NAME}.zip"; then
+  if ! cp ${lastsave} ${savedir}/${SAVE_NAME}.zip; then
     echo "Error! Failed to refresh saves"
     exit 1
   fi
