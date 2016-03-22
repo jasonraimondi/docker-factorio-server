@@ -19,7 +19,8 @@ AUTOSAVE_SLOTS=3
 
 # Extras
 # Additional binary arguments, these will be sent to the binary when issuing the "start" command
-EXTRA_BINARGS="--disallow-commands --peer-to-peer"
+EXTRA_BINARGS="--disallow-commands"
+#EXTRA_BINARGS="--disallow-commands --peer-to-peer"
 
 #
 # Refrain from changing the variables below, they are used internally by the script and should
