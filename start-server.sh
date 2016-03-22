@@ -12,7 +12,7 @@ refresh_save(){
   fi
 
   # Find the last modified save file
-  lastsave=$(as_user "ls -t ${savedir}/*.zip" 2> /dev/null | head -1)
+  lastsave=$(ls -t ${savedir}/*.zip 2> /dev/null | head -1)
 
   # Sanity check, did we even find any save files?
   if [ -z "${lastsave}" ]; then
