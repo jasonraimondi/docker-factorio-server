@@ -8,7 +8,7 @@ VOLUME /opt/factorio/saves
 
 RUN yum install -y wget
 
-ENV FACTORIO_VERSION 0.12.28
+ENV FACTORIO_VERSION 0.12.29
 
 COPY start-server.sh /opt/start-server.sh
 COPY config /opt/config
